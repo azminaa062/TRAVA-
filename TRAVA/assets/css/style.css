@@ -1,0 +1,493 @@
+/* ================= GLOBAL ================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f5f7fa;
+    font-family:'Segoe UI', sans-serif;
+    overflow-x:hidden;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    background:linear-gradient(to right, #f9c74f, #f9844a);
+    padding:12px 0;
+    box-shadow:0 3px 12px rgba(0,0,0,0.15);
+}
+
+.navbar .container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+/* ================= LOGO ================= */
+
+.logo-navbar{
+    height:40px;
+    width:auto;
+    object-fit:contain;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    background:linear-gradient(to right, #f9c74f, #f9844a);
+    color:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 12px 30px rgba(0,0,0,0.15);
+    margin-top:20px;
+}
+
+.hero h2{
+    font-weight:700;
+}
+
+.hero p{
+    opacity:0.92;
+}
+
+/* ================= CARD ================= */
+
+.card{
+    border:none;
+    border-radius:20px;
+    overflow:hidden;
+    transition:0.3s ease;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+/* ================= BUTTON ================= */
+
+.btn-primary{
+    background:#f9844a;
+    border:none;
+    border-radius:12px;
+    transition:0.3s;
+}
+
+.btn-primary:hover{
+    background:#d96b32;
+    transform:translateY(-2px);
+}
+
+.btn-danger{
+    border-radius:12px;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#1c1c1c;
+    color:white;
+    padding:40px 0;
+}
+
+footer p,
+footer li{
+    color:#ccc;
+}
+
+/* ================= DETAIL ================= */
+
+.detail-image-box{
+    height:450px;
+    overflow:hidden;
+    border-radius:20px;
+    margin-bottom:25px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+}
+
+.detail-img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+/* ================= MAPS ================= */
+
+iframe{
+    width:100%;
+    height:400px;
+    border:0;
+    border-radius:15px;
+}
+
+/* ================= REVIEW RATING ================= */
+
+.rating{
+    display:flex;
+    flex-direction:row-reverse;
+    justify-content:flex-end;
+    gap:6px;
+}
+
+.rating input{
+    display:none;
+}
+
+.rating label{
+    font-size:42px;
+    color:#d6d6d6;
+    cursor:pointer;
+    transition:0.2s ease;
+    line-height:1;
+}
+
+.rating input:checked ~ label{
+    color:#ffc107;
+}
+
+.rating label:hover,
+.rating label:hover ~ label{
+    color:#ffc107;
+}
+
+/* ================= REVIEW CARD ================= */
+
+.review-stars{
+    font-size:20px;
+    color:#ffc107;
+}
+
+.review-comment{
+    color:#555;
+    line-height:1.7;
+}
+
+/* ================= LOGIN PAGE ================= */
+
+.login-page{
+
+    width:100%;
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.35),
+        rgba(0,0,0,0.35)
+    ),
+    url('/TRAVA/assets/img/bg-login.png');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+/* ================= LOGIN NAVBAR ================= */
+
+.login-navbar{
+
+    width:100%;
+
+    position:absolute;
+    top:0;
+    left:0;
+
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+
+    padding:28px 55px;
+
+    z-index:10;
+}
+
+/* ================= LOGIN LOGO ================= */
+
+.logo-area{
+    display:flex;
+    align-items:center;
+}
+
+.logo-img{
+
+    width:200px;
+    height:auto;
+
+    object-fit:contain;
+
+    filter:
+    drop-shadow(
+        0 0 15px rgba(255,255,255,0.25)
+    );
+}
+
+/* ================= LOGIN BOX ================= */
+
+.login-box{
+
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+
+    padding-right:120px;
+}
+
+/* ================= LOGIN CARD ================= */
+
+.login-card{
+
+    width:430px;
+
+    padding:55px 45px;
+
+    border-radius:32px;
+
+    background:rgba(255,255,255,0.12);
+
+    backdrop-filter:blur(16px);
+
+    border:1px solid rgba(255,255,255,0.2);
+
+    box-shadow:0 12px 35px rgba(0,0,0,0.3);
+
+    color:white;
+
+    text-align:center;
+
+    animation:fadeLogin 0.6s ease;
+}
+
+/* ================= LOGIN TITLE ================= */
+
+.login-card h1{
+
+    font-size:68px;
+
+    font-weight:bold;
+
+    margin-bottom:10px;
+
+    letter-spacing:2px;
+
+    color:white;
+}
+
+.login-card p{
+
+    font-size:20px;
+
+    opacity:0.92;
+
+    margin-bottom:38px;
+
+    color:rgba(255,255,255,0.9);
+}
+
+/* ================= INPUT ================= */
+
+.input-box{
+    margin-bottom:22px;
+}
+
+.input-box input{
+
+    width:100%;
+    height:58px;
+
+    border:none;
+    outline:none;
+
+    border-radius:16px;
+
+    padding:0 20px;
+
+    background:rgba(255,255,255,0.22);
+
+    color:white !important;
+
+    font-size:15px;
+}
+
+.input-box input::placeholder{
+    color:rgba(255,255,255,0.85);
+}
+
+.input-box input:focus{
+
+    background:rgba(255,255,255,0.25);
+
+    box-shadow:0 0 0 3px rgba(255,255,255,0.1);
+}
+
+/* ================= BUTTON LOGIN ================= */
+
+.btn-login{
+
+    width:100%;
+    height:58px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:white;
+
+    color:#246BFD;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s ease;
+}
+
+.btn-login:hover{
+
+    transform:translateY(-3px);
+
+    background:#f2f2f2;
+}
+
+/* ================= REGISTER ================= */
+
+.register-link{
+
+    margin-top:24px;
+
+    font-size:15px;
+
+    color:white;
+}
+
+.register-link a{
+
+    color:white;
+
+    font-weight:bold;
+
+    text-decoration:none;
+}
+
+.register-link a:hover{
+    text-decoration:underline;
+}
+
+/* ================= ANIMATION ================= */
+
+@keyframes fadeLogin{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:992px){
+
+    .login-box{
+        justify-content:center;
+        padding-right:0;
+    }
+
+    .detail-image-box{
+        height:320px;
+    }
+}
+
+@media(max-width:768px){
+
+    body{
+        overflow:auto;
+    }
+
+    .hero{
+        padding:25px;
+        text-align:center;
+    }
+
+    .detail-image-box{
+        height:250px;
+    }
+
+    .login-navbar{
+        padding:20px;
+    }
+
+    .logo-img{
+        width:180px;
+    }
+
+    .login-card{
+        width:90%;
+        padding:40px 28px;
+    }
+
+    .login-card h1{
+        font-size:50px;
+    }
+
+    .login-card p{
+        font-size:16px;
+    }
+
+    .rating label{
+        font-size:36px;
+    }
+}
+
+@media(max-width:576px){
+
+    .login-card{
+        width:95%;
+        padding:35px 22px;
+        border-radius:25px;
+    }
+
+    .login-card h1{
+        font-size:42px;
+    }
+
+    .input-box input{
+        height:54px;
+    }
+
+    .btn-login{
+        height:54px;
+    }
+
+    .logo-img{
+        width:160px;
+    }
+
+    .hero{
+        padding:20px;
+    }
+
+    .rating label{
+        font-size:32px;
+    }
+}
