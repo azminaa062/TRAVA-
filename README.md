@@ -127,7 +127,7 @@ TRAVA/
 ## 7. Author
 1. Faija Kulla Azmina (2488010034)
 2. Faqih Huddin SM (2488010061)
-3. Moh. Farid Ilham Ghifari (2488010066)
+3. Moh. Farid Ilham Ghifari (2488010066) 
 - Link Video demo project di youtube : https://youtu.be/gai13TpPe78
 
 ## 8. Lisensi
