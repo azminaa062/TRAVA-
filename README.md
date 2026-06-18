@@ -1,4 +1,4 @@
-# Projek Website TRAVA - Explore Cirebon
+# Projek Website TRAVA - Explore Cirebon 
 
 ## 1. Deskripsi
 Project ini adalah aplikasi web pariwisata dinamis yang dibuat menggunakan PHP Native dan MySQL. Sistem ini digunakan untuk menjelajahi destinasi wisata di Cirebon, memberikan ulasan dan rating, menyimpan wishlist, serta merencanakan trip secara kolaboratif bersama pengguna lain, dengan fitur role admin dan user.
